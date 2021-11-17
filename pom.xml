@@ -16,7 +16,7 @@
   <properties>
     <revision>1.16</revision>
     <changelist>-SNAPSHOT</changelist>
-    <jenkins.version>2.249.1</jenkins.version>
+    <jenkins.version>2.319</jenkins.version>
     <java.level>8</java.level>
     <useBeta>true</useBeta>
   </properties>
@@ -245,13 +245,18 @@
       <artifactId>guava</artifactId>
       <version>31.0.1-jre</version>
     </dependency>
+    <dependency>
+      <groupId>org.kohsuke</groupId>
+      <artifactId>access-modifier-annotation</artifactId>
+      <version>1.25</version>
+    </dependency>
   </dependencies>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.249.x</artifactId>
-        <version>966.v3857b7c82032</version>
+        <artifactId>bom-2.319.x</artifactId>
+        <version>1013.vf8058992a042</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -269,6 +274,11 @@
         <groupId>com.google.errorprone</groupId>
         <artifactId>error_prone_annotations</artifactId>
         <version>2.9.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.dataformat</groupId>
+        <artifactId>jackson-dataformat-cbor</artifactId>
+        <version>2.13.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
